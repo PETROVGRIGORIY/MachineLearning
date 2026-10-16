@@ -5,7 +5,7 @@ import joblib
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.svm import SVC
+from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import balanced_accuracy_score
 
 
@@ -57,7 +57,7 @@ def fit_lid_model():
     X_train_vec = vectorizer.fit_transform(X_train)
     X_test_vec = vectorizer.transform(X_test)
 
-    model = SVC(kernel="linear", C=1.0, random_state=42)
+    model = MultinomialNB(alpha=0.1)
     model.fit(X_train_vec, y_train)
 
     y_pred = model.predict(X_test_vec)

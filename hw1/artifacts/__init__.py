@@ -1,0 +1,1 @@
+from .lid.predict import load_lid_model, predict_language

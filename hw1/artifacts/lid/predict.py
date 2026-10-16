@@ -18,5 +18,5 @@ def predict_language(word, model, vectorizer):
     try:
         vec = vectorizer.transform([word])
         return model.predict(vec)[0]
-    except Exception:
-        return "other"
+    except Exception as e:
+        raise e
