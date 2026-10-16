@@ -1,3 +1,7 @@
+# Загрузка модели
+скачать по ссылке и положить в artifacts/topic_models
+https://disk.360.yandex.ru/d/zbcghOXgrLkOLg
+
 # Разведочный анализ
 
 ### 1. Общая структура данных

@@ -1,2 +1,3 @@
 hw1/hw1_train.jsonl
 *.jsonl
+hw1/artifacts/topic_models/topic_own_lsa_rbf_svm.joblib
