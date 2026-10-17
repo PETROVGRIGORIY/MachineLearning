@@ -546,7 +546,7 @@ def read_labels(path: str, task: str) -> dict[str, str]:
         for line in fh:
             if line.strip():
                 record = json.loads(line)
-                label = (record.get("labels") or {}).get(task)
+                label = (record.get("labels") or record).get(task)
                 if label is not None:
                     labels[record["dialog_id"]] = label
     return labels
